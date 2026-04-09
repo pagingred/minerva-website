@@ -1,0 +1,27 @@
+.dark-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 22px;
+  width: 48px;           /* fixed size circle */
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background: #111;
+  color: white;
+
+  display: flex;         /* center icon */
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .dark-toggle {
+  background: white;
+  color: black;
+}
