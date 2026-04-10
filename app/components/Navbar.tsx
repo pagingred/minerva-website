@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import DarkModeToggle from "./DarkModeToggle";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -10,6 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
+						<DarkModeToggle />
       <div className="nav-container">
         <div className="logo">
 			<Link href="/">
@@ -24,10 +26,10 @@ export default function Navbar() {
         </div>
 
         <div className="links">
-          <Link href="/">Home</Link>
-          <Link href="/capabilities">Capabilities</Link>
-          <Link href="/culture">Culture</Link>
-          <Link href="/employees">Employees</Link>
+          <Link href="/"><p className="text-gray-900 dark:text-gray-100">Home</p></Link>
+          <Link href="/capabilities"><p className="text-gray-900 dark:text-gray-100">Capabilities</p></Link>
+          <Link href="/culture"><p className="text-gray-900 dark:text-gray-100">Culture</p></Link>
+          <Link href="/employees"><p className="text-gray-900 dark:text-gray-100">Employees</p></Link>
         </div>
 
         <button className="menu-btn" onClick={() => setOpen(!open)}>

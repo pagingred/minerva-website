@@ -55,14 +55,15 @@
 /* Caption */
 .caption {
   position: absolute;
-  bottom: 40px;
-  right: 20px;
+  bottom: 0px;
+  right: 0px;
+  font-family: Montserrat, Arial; 
   z-index: 2;
   color: white;
   font-size: 16px;
   background: rgba(0, 0, 0, 0.5);
   padding: 8px 12px;
-  border-radius: 6px;
+  border-radius: 6px 0px 0px 0px;
 }
 
 /* Arrows */
@@ -77,6 +78,7 @@
   border: none;
   padding: 10px 14px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .arrow.left {
@@ -92,7 +94,8 @@
   position: absolute;
   bottom: 10px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
   z-index: 3;
 }
 
@@ -112,14 +115,14 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .slideshow {
-    height: 350px;
-  }
+	.slideshow {
+		height: 350px;
+	}
 
-  .hero-text h1 {
-    font-size: 36px;
-  }
-.arrow {
-  display: none;
-}
+	.hero-text h1 {
+		font-size: 36px;
+	}
+	.arrow {
+		display: none;
+	}
 }
