@@ -151,3 +151,8 @@ body.dark .dots .dot.active {
     @apply font-sans;
   }
 }
+
+.topOffset {
+  position: relative;
+  top: 75px;
+}

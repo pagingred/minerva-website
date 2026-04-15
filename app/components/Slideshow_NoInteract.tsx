@@ -6,12 +6,10 @@ import "./slideshow_nointeract.css";
 
 const slides = [
   {
-    src: "/slide1.jpg",
-    caption: "Creating emergent defense technology",
+    src: "/slide1.jpg"
   },
   {
-    src: "/slide2.png",
-    caption: "Using state of the art software",
+    src: "/background.png"
   }
 ];
 
@@ -21,7 +19,7 @@ export default function Slideshow_NoInteract() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 4000);
+    }, 8000);
     return () => clearInterval(interval);
   }, [index]);
 
@@ -48,8 +46,8 @@ export default function Slideshow_NoInteract() {
           <div className="hero-text">
             <h1>
               LOOKING FORWARD <br />
-              TO PROTECT OUR <br />
-              HERITAGE
+              TO PROTECTING <br />
+              OUR HERITAGE
             </h1>
           </div>
         </div>

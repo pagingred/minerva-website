@@ -1,6 +1,6 @@
 .nav {
-  font-family: Arial, sans-serif;
   font-size: 20px;
+  opacity: 0.75;
 }
 
 .nav.dark {
