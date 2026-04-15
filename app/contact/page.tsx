@@ -12,13 +12,9 @@ const Contact = () => {
 		  topOffset
         "
       >
-        <h1 className="text-3xl font-semibold text-black dark:text-white mb-4">
+        <h1 className="text-4xl font-semibold text-black dark:text-white mb-4">
           Contact Us
         </h1>
-
-        <p className="text-sm text-zinc-500 mb-8">
-          We’d love to hear from you. Reach out using the information below.
-        </p>
 		
 		<div className="space-y-8">
           {/* Email */}
