@@ -18,13 +18,6 @@ const slides = [
 export default function Slideshow() {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [index]);
-
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % slides.length);
   };
@@ -34,6 +27,13 @@ export default function Slideshow() {
       prev === 0 ? slides.length - 1 : prev - 1
     );
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [index]);
 
   return (
     <div className="slideshow">

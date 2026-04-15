@@ -13,13 +13,14 @@ export default function CapabilityCard({
   image,
 }: CapabilityCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 transition">
+    <div className="group relative overflow-hidden bg-zinc-900/80 dark:bg-zinc-900 dark:border border-zinc-800 hover:border-zinc-700 transition">
       
       <div className="aspect-[4/3] relative">
         <Image
           src={image}
           alt={title}
           fill
+		  objectFit="contain"
           className="object-cover opacity-80 group-hover:opacity-100 transition"
         />
       </div>

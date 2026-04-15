@@ -1,8 +1,8 @@
 // components/CapabilitiesGrid.tsx
 import CapabilityCard from "./CapabilityCard";
-import { capabilities } from "../data/capabilities";
+import { partners } from "../data/partners";
 
-export default function CapabilitiesGrid() {
+export default function PartnerGrid() {
   return (
     <section>
       <div className="
@@ -12,7 +12,7 @@ export default function CapabilitiesGrid() {
         md:grid-cols-3
         lg:grid-cols-4
       ">
-        {capabilities.map((cap, i) => (
+        {partners.map((cap, i) => (
           <CapabilityCard key={i} {...cap} />
         ))}
       </div>

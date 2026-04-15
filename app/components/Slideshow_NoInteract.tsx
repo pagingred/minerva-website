@@ -16,22 +16,16 @@ const slides = [
 export default function Slideshow_NoInteract() {
   const [index, setIndex] = useState(0);
 
+  const nextSlide = () => {
+    setIndex((prev) => (prev + 1) % slides.length);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 8000);
     return () => clearInterval(interval);
   }, [index]);
-
-  const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setIndex((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
-  };
 
   return (
     <div className="slideshow_nointeract">

@@ -2,8 +2,6 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./components/ThemeProvider"
 import Footer from "./components/Footer"
 import "./globals.css";
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
 
 import { Montserrat } from 'next/font/google';
 

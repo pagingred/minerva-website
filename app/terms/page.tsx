@@ -5,31 +5,28 @@ const Terms = () => {
     <div className="min-h-screen px-4 py-16 flex justify-center">
       <div
         className="
-          w-full max-w-3xl
-          bg-zinc-950
-          border border-zinc-800
-          rounded-2xl
+          w-full max-w-5/6
           p-8 md:p-12
           text-zinc-300
           leading-relaxed
 		  topOffset
         "
       >
-        <h1 className="text-3xl font-semibold text-white mb-4">
+        <h1 className="text-3xl font-semibold text-black dark:text-white mb-4">
           Terms of Service
         </h1>
 
-        <p className="text-sm mb-8">
+        <p className="text-sm text-zinc-500 mb-8">
           Last updated: April 15, 2026
         </p>
 
         <div className="space-y-6">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             Agreement to Our Legal Terms
           </h2>
 
           <p>
-            We are Minerva Defense ("Company," "we," "us," "our"), a company
+            We are Minerva Defense (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), a company
             registered in Alabama, United States at 115 Murray Drive, Madison,
             AL 35758.
           </p>
@@ -43,8 +40,8 @@ const Terms = () => {
             >
               minervadefense.com
             </a>{" "}
-            (the "Site"), as well as any other related products and services
-            (the "Services").
+            (the &quot;Site&quot;), as well as any other related products and services
+            (the &quot;Services&quot;).
           </p>
 
           <p>
@@ -59,7 +56,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 1 ================= */}
-          <h2 className="text-xl font-semibold text-white">1. Our Services</h2>
+          <h2 className="text-xl font-semibold text-black dark:text-white">1. Our Services</h2>
 
           <p>
             The information provided when using the Services is not intended for
@@ -67,18 +64,18 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 2 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             2. Intellectual Property Rights
           </h2>
 
           <p>
             We own or license all intellectual property in the Services,
-            including content, trademarks, and materials ("Content" and
-            "Marks").
+            including content, trademarks, and materials (&quot;Content&quot; and
+            &quot;Marks&quot;).
           </p>
 
           <p>
-            The Content and Marks are provided "AS IS" for personal,
+            The Content and Marks are provided &quot;AS IS&quot; for personal,
             non-commercial use only.
           </p>
 
@@ -89,7 +86,7 @@ const Terms = () => {
           </ul>
 
           {/* ================= SECTION 3 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             3. User Representations
           </h2>
 
@@ -101,7 +98,7 @@ const Terms = () => {
           </ul>
 
           {/* ================= SECTION 4 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             4. Prohibited Activities
           </h2>
 
@@ -116,13 +113,13 @@ const Terms = () => {
           </ul>
 
           {/* ================= SECTION 5 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             5. User Contributions
           </h2>
           <p>The Services do not allow user-generated content.</p>
 
           {/* ================= SECTION 6 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             6. Contribution License
           </h2>
           <p>
@@ -131,7 +128,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 7 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             7. Third-Party Websites
           </h2>
 
@@ -141,7 +138,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 8 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             8. Services Management
           </h2>
 
@@ -151,7 +148,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 9 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             9. Privacy Policy
           </h2>
 
@@ -166,7 +163,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 10 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             10. Term and Termination
           </h2>
 
@@ -175,7 +172,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 11 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             11. Modifications and Interruptions
           </h2>
 
@@ -184,14 +181,14 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 12 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             12. Governing Law
           </h2>
 
           <p>These Terms are governed by Alabama law.</p>
 
           {/* ================= SECTION 13 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             13. Dispute Resolution
           </h2>
 
@@ -201,7 +198,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 14 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             14. Corrections
           </h2>
 
@@ -210,16 +207,16 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 15 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             15. Disclaimer
           </h2>
 
           <p>
-            The Services are provided "AS IS" without warranties of any kind.
+            The Services are provided &quot;AS IS&quot; without warranties of any kind.
           </p>
 
           {/* ================= SECTION 16 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             16. Limitation of Liability
           </h2>
 
@@ -228,7 +225,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 17 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             17. Indemnification
           </h2>
 
@@ -238,7 +235,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 18 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             18. User Data
           </h2>
 
@@ -248,7 +245,7 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 19 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             19. Electronic Communications
           </h2>
 
@@ -257,16 +254,16 @@ const Terms = () => {
           </p>
 
           {/* ================= SECTION 20 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             20. Miscellaneous
           </h2>
 
-          <p>
+          <p className="text-xl font-semibold text-black dark:text-white">
             These Terms constitute the entire agreement between you and us.
           </p>
 
           {/* ================= SECTION 21 ================= */}
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-black dark:text-white">
             21. Contact Us
           </h2>
 

@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
@@ -9,11 +8,10 @@ import "./navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const { resolvedTheme } = useTheme();
 	  
   return (
     <nav className="nav bg-white dark:bg-black">
-						<DarkModeToggle />
+		<DarkModeToggle />
       <div className="nav-container">
         <div className="logo">
 			<Link href="/">

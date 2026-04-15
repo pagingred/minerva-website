@@ -1,43 +1,13 @@
 // data/capabilities.ts
 export const capabilities = [
   {
-    title: "AI Systems",
-    category: "Software",
-    image: "/images/ai.jpg",
+    title: "Modeling & Simulation",
+    category: "Software | Engineering",
+    image: "/mns.webp",
   },
   {
-    title: "Mechanical Design",
-    category: "Engineering",
-    image: "/images/mech.jpg",
-  },
-  {
-    title: "Mechanical Design",
-    category: "Engineering",
-    image: "/images/mech.jpg",
-  },
-  {
-    title: "Mechanical Design",
-    category: "Engineering",
-    image: "/images/mech.jpg",
-  },
-  {
-    title: "Mechanical Design",
-    category: "Engineering",
-    image: "/images/mech.jpg",
-  },
-  {
-    title: "Mechanical Design",
-    category: "Engineering",
-    image: "/images/mech.jpg",
-  },
-  {
-    title: "Mechanical Design",
-    category: "Engineering",
-    image: "/images/mech.jpg",
-  },
-  {
-    title: "Cloud Infrastructure",
-    category: "Software",
-    image: "/images/cloud.jpg",
+    title: "Advanced AFSIM Training",
+    category: "Software | Engineering",
+    image: "/afsim.png",
   },
 ];
