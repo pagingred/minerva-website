@@ -18,8 +18,8 @@ export default function Navbar() {
 				<Image
 				  src="/logo.png"
 				  alt="Minerva Defense logo"
-				  width={100}
-				  height={100}
+				  width={65}
+				  height={65}
 				  priority
 				/>
 			</Link>

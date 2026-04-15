@@ -6,19 +6,19 @@ import "./capability-widget.css";
 
 const capabilities = [
   {
-    src: "/capability1.jpg",
+    src: "/capability1.png",
     caption: "Creating emergent defense technology",
   },
   {
-    src: "/capability1.jpg",
+    src: "/capability1.png",
     caption: "Creating emergent defense technology",
   },
   {
-    src: "/capability1.jpg",
+    src: "/capability1.png",
     caption: "Creating emergent defense technology",
   },
   {
-    src: "/capability1.jpg",
+    src: "/capability1.png",
     caption: "Creating emergent defense technology",
   },
 ];
@@ -29,7 +29,6 @@ export default function CapabilityWidget() {
 		{
 			capabilities.map((capability, i) => (
 				<div key={i} className="capability-container p-4">
-					<Image src={capability.src} alt="" fill priority={i === 0} />
 					<div className="capability-text">
 						{capability.caption}
 					</div>
