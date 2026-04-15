@@ -1,7 +1,17 @@
 // components/CapabilityCard.tsx
 import Image from "next/image";
 
-export default function CapabilityCard({ title, category, image }) {
+type CapabilityCardProps = {
+  title: string;
+  category: string;
+  image: string;
+};
+
+export default function CapabilityCard({
+  title,
+  category,
+  image,
+}: CapabilityCardProps) {
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 transition">
       
