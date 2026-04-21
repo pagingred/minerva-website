@@ -3,7 +3,7 @@ export default function CulturePage() {
     <div className="text-zinc-300 px-6 py-16 flex justify-center">
       <div
         className="
-          w-full
+          w-full max-w-5/6
           p-8 md:p-12
           text-zinc-300
           leading-relaxed
