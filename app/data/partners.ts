@@ -10,7 +10,7 @@ export const partners = [
   },
   {
     title: "The Ronald Reagan Space and Missile Test Range",
-    image: "/rrbmdts.webp",
+    image: "/ronald-reagan-str.png",
   },
   {
     title: "Test Resources Management Center",
