@@ -20,7 +20,8 @@ export default function CapabilityCard({
           src={image}
           alt={title}
           fill
-		  objectFit="contain"
+		  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+		  style={{ objectFit: "contain" }}
           className="object-cover opacity-80 group-hover:opacity-100 transition"
         />
       </div>
