@@ -1,5 +1,5 @@
 // components/CapabilitiesGrid.tsx
-import CapabilityCard from "./CapabilityCard";
+import PartnerCard from "./PartnerCard";
 import { partners } from "../data/partners";
 
 export default function PartnerGrid() {
@@ -13,7 +13,7 @@ export default function PartnerGrid() {
         lg:grid-cols-4
       ">
         {partners.map((cap, i) => (
-          <CapabilityCard key={i} {...cap} />
+          <PartnerCard key={i} {...cap} />
         ))}
       </div>
     </section>
