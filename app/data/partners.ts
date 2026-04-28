@@ -6,14 +6,14 @@ export const partners = [
   },
   {
     title: "The U.S. Army Space and Missile Defense Command",
-    image: "/usasmdc.jpg",
+    image: "/us-army-smdc.png",
   },
   {
     title: "The Ronald Reagan Space and Missile Test Range",
     image: "/ronald-reagan-str.png",
   },
   {
-    title: "Test Resources Management Center",
+    title: "Test Resource Management Center",
     image: "/dowtrmc.png",
   },
 ];
