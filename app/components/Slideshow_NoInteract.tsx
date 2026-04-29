@@ -36,14 +36,14 @@ export default function Slideshow_NoInteract() {
           {/* Dark overlay */}
           <div className="overlay" />
 
-          {/* HERO TEXT (centered) */}
+          {/* HERO TEXT (centered) 
           <div className="hero-text">
             <h1>
               LOOKING FORWARD <br />
               TO PROTECTING <br />
               OUR HERITAGE
             </h1>
-          </div>
+          </div>*/}
         </div>
       ))}
     </div>
