@@ -11,40 +11,72 @@ export default function CulturePage() {
         "
       >
         <h1 className="text-4xl font-semibold text-black dark:text-white mb-6">
-          Culture
+          Mission, Vision, and Values
         </h1>
 
-        <div className="space-y-6">
-          {[
-            {
-              title: "Precision Over Noise",
-              desc: "We prioritize correctness and clarity in all technical and operational work.",
-            },
-            {
-              title: "Ownership Mindset",
-              desc: "Every team member is responsible for outcomes, not just tasks.",
-            },
-            {
-              title: "Continuous Learning",
-              desc: "We invest heavily in research, experimentation, and skill development.",
-            },
-            {
-              title: "Mission Focused",
-              desc: "We align every effort with meaningful, real-world impact.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="p-6"
-            >
-              <h2 className="text-black dark:text-white text-xl font-medium mb-2">
-                {item.title}
+        <p className="text-zinc-400 mb-10 leading-relaxed">
+          Who we are, what we do, where we want to go from here
+        </p>
+
+        {/* Grid */}
+        <div className="grid md:grid-cols-3 gap-20 text-center">
+
+          {/* Mission */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/mission.png"
+              alt="Mission"
+              className="h-10 w-10 mb-6 opacity-70 invert dark:invert-0"
+            />
+            <p className="max-w-xs text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+              Bring our best ideas and effort to overcome the challenges to
+              peace and prosperity for our nation and its allies.
+            </p>
+          </div>
+
+          {/* Vision */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/vision.png"
+              alt="Vision"
+              className="h-10 w-10 mb-6 opacity-70 invert dark:invert-0"
+            />
+            <p className="max-w-xs text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+              Find talented and passionate people, equip them, and reward them.
+              Minerva wants to build the future where the American dream is
+              alive again for all Americans willing to put on their best effort.
+            </p>
+          </div>
+
+          {/* Values */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/values.png"
+              alt="Values"
+              className="h-10 w-10 mb-6 opacity-70 invert dark:invert-0"
+            />
+
+            <div className="max-w-xs">
+              <h2 className="text-sm font-semibold text-zinc-900 dark:text-white mb-2">
+                OUR STANDARDS
               </h2>
-              <p className="text-black dark:text-zinc-400 text-sm leading-relaxed">
-                {item.desc}
+
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
+                Be wise, Be just, Be passionate, Be excellent
               </p>
+
+              <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-2">
+                Our Values
+              </h3>
+
+              <div className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
+                <p>Have Fun</p>
+                <p>Do Great Work</p>
+                <p>Flourish</p>
+              </div>
             </div>
-          ))}
+          </div>
+
         </div>
       </div>
     </div>

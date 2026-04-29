@@ -79,7 +79,18 @@ export default function CareersPage() {
 
   return (
     <div className="text-zinc-300 px-6 py-16 flex justify-center">
-      <div className="w-full max-w-5/6 p-8 md:p-12 leading-relaxed topOffset">
+      <div
+        className="
+          w-full max-w-5/6
+          p-8 md:p-12
+          text-zinc-300
+          leading-relaxed
+		  topOffset
+        "
+      >
+        <h1 className="text-4xl font-semibold text-black dark:text-white mb-6">
+          Dive into your passion, at Minerva.
+        </h1>
 
         {/* Filter */}
         <div className="flex justify-center mb-10">

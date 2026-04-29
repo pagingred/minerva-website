@@ -36,6 +36,7 @@ export default function Navbar() {
           <Link href="/"><p className="text-gray-900 dark:text-gray-100">Home</p></Link>
           <Link href="/capabilities"><p className="text-gray-900 dark:text-gray-100">Capabilities</p></Link>
           <Link href="/culture"><p className="text-gray-900 dark:text-gray-100">Culture</p></Link>
+          <Link href="/employees"><p className="text-gray-900 dark:text-gray-100">Employees</p></Link>
           <Link href="/careers"><p className="text-gray-900 dark:text-gray-100">Careers</p></Link>
           <Link href="/contact"><p className="text-gray-900 dark:text-gray-100">Contact Us</p></Link>
         </div>
@@ -51,6 +52,7 @@ export default function Navbar() {
           <Link href="/capabilities" onClick={() => setOpen(false)}>Capabilities</Link>
           <Link href="/culture" onClick={() => setOpen(false)}>Culture</Link>
           <Link href="/employees" onClick={() => setOpen(false)}>Employees</Link>
+          <Link href="/careers" onClick={() => setOpen(false)}>Careers</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}
