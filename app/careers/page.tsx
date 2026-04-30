@@ -11,16 +11,19 @@ export default function CareersPage() {
       title: "Software Architect",
       category: "Engineering",
       locations: ["Huntsville, AL"],
+	  url: "https://www.indeed.com/viewjob?jk=6b2edcbf9c1fd0c6&from=shareddesktop_copy",
     },
     {
       title: "Full Stack Software Engineer",
       category: "Engineering",
       locations: ["Beavercreek, OH"],
+	  url: "https://www.indeed.com/viewjob?jk=0a92a91bb10cc2e4&from=shareddesktop_copy",
     },
     {
       title: "Senior Full Stack Software Engineer",
       category: "Engineering",
       locations: ["Beavercreek, OH"],
+	  url: "",
     },
 
     // Customer / Solutions
@@ -28,16 +31,19 @@ export default function CareersPage() {
       title: "Solutions Engineer",
       category: "Customer & Solutions",
       locations: ["Huntsville, AL"],
+	  url: "https://www.indeed.com/viewjob?jk=1fc441ea3128a254&from=shareddesktop_copy",
     },
     {
       title: "Customer Success Engineer",
       category: "Customer & Solutions",
       locations: ["Huntsville, AL"],
+	  url: "https://www.indeed.com/viewjob?jk=a26239d9af51b87c&from=shareddesktop_copy",
     },
     {
       title: "Customer Success Analyst",
       category: "Customer & Solutions",
       locations: ["Huntsville, AL"],
+	  url: "",
     },
 
     // DevOps / Delivery
@@ -45,19 +51,21 @@ export default function CareersPage() {
       title: "Release Manager",
       category: "DevOps & Delivery",
       locations: ["Huntsville, AL"],
+	  url: "https://www.indeed.com/viewjob?jk=e3502d622594c660&from=shareddesktop_copy",
     },
     {
       title: "QA Automation Engineer",
       category: "DevOps & Delivery",
       locations: ["Huntsville, AL"],
+	  url: "https://www.indeed.com/viewjob?jk=a55b37e07d3bedf6&from=shareddesktop_copy",
     },
 
     // Systems / Configuration
     {
-      title:
-        "Senior Configuration Manager (TS/SCI, Security+)",
+      title: "Senior Configuration Manager (TS/SCI, Security+)",
       category: "Systems & Configuration",
       locations: ["Wright-Patterson AFB, OH"],
+	  url: "https://www.indeed.com/viewjob?jk=8cb514540893266e&from=shareddesktop_copy",
     },
 
     // Hardware
@@ -65,6 +73,7 @@ export default function CareersPage() {
       title: "Senior Electronics Technician",
       category: "Hardware",
       locations: ["Huntsville, AL"],
+	  url: "",
     },
   ];
 
@@ -116,11 +125,6 @@ export default function CareersPage() {
           </select>
         </div>
 
-        {/* Open Positions */}
-        <h3 className="text-xl font-semibold mb-4 text-black dark:text-white">
-          Open Positions
-        </h3>
-
         {categories.map((category) => {
           const sectionJobs = filteredJobs.filter(
             (j) => j.category === category
@@ -130,7 +134,7 @@ export default function CareersPage() {
 
           return (
             <div key={category} className="mb-8">
-              <h4 className="font-medium text-black dark:text-white mb-2">
+              <h4 className="font-semibold text-black dark:text-white mb-2">
                 {category}
               </h4>
               <div className="border-t border-zinc-300 dark:border-zinc-700 mb-4" />
@@ -140,7 +144,7 @@ export default function CareersPage() {
                   key={job.title}
                   className="flex justify-between items-center py-3 border-b border-zinc-200 dark:border-zinc-800"
                 >
-                  <p className="font-semibold text-black dark:text-white">
+                  <p className="font-medium text-black dark:text-white">
                     {job.title}
                   </p>
 
@@ -150,7 +154,7 @@ export default function CareersPage() {
                         key={loc}
                         className="border px-3 py-1 rounded-md text-sm text-black dark:text-white"
                       >
-                        {loc}
+                        <a href={job.url}>{loc}</a>
                       </span>
                     ))}
                   </div>

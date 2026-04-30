@@ -156,3 +156,13 @@ body.dark .dots .dot.active {
   position: relative;
   top: 75px;
 }
+
+:root {
+  --bg: #f9fafb;
+  --text: #111111;
+}
+
+.dark {
+  --bg: #0b0b0f;
+  --text: #f5f5f5;
+}
