@@ -70,9 +70,7 @@ export default function CulturePage() {
               </h3>
 
               <div className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
-                <p>Have Fun</p>
-                <p>Do Great Work</p>
-                <p>Flourish</p>
+                <p>Have Fun, Do Great Work, Flourish</p>
               </div>
             </div>
           </div>
