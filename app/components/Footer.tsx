@@ -40,6 +40,7 @@ export default function Footer() {
               Social
             </h3>
             <ul className="space-y-2 text-sm">
+              <li><Link href="https://www.indeed.com/cmp/Minerva-Defense,-Inc" className="hover:text-white transition">Indeed</Link></li>
               <li><Link href="https://www.linkedin.com/company/minerva-defense-inc" className="hover:text-white transition">LinkedIn</Link></li>
             </ul>
           </div>
