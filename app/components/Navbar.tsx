@@ -7,7 +7,12 @@ import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 import "./navbar.css";
 
-const Tab = ({ href, label }) => {
+type TabButtonProps = {
+  href: string;
+  label: string;
+};
+
+const Tab = ({ href, label } : TabButtonProps) => {
   const pathname = usePathname();
   const isActive = pathname === href;
 
