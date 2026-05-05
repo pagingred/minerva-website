@@ -3,12 +3,12 @@ export const capabilities = [
   {
     title: "Modeling & Simulation",
     category: "Engineering | Analysis | Testing",
-    image: "/mns.webp",
+    image: "/mns.jpg",
   },
   {
     title: "Expeditionary Testing",
     category: "Testing | Operations | Analysis",
-    image: "/testing.png",
+    image: "/testing.jpg",
   },
   {
     title: "Cyber Security",
@@ -23,7 +23,7 @@ export const capabilities = [
   {
     title: "Systems Engineering Support",
     category: "Engineering | Integration | Support",
-    image: "/systems-engineering.png",
+    image: "/systems-engineering.jpg",
   },
   {
     title: "Project Management Support",
