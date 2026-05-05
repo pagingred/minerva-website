@@ -27,9 +27,6 @@ export default function CapabilityCard({
       </div>
 
       <div className="p-4">
-        /*<p className="text-xs text-zinc-400 uppercase tracking-wide">
-          {category}
-        </p>*/
         <h3 className="text-lg text-white font-medium">
           {title}
         </h3>
