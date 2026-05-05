@@ -1,10 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 import "./navbar.css";
+
+const Tab = ({ href, label }) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
+	return (
+		<Link href={href}>
+			<p className={`tab ${isActive ? 'accent-line text-gray-900 dark:text-gray-100' : 'text-gray-900 dark:text-gray-100'}`}>{label}</p>
+		</Link>
+	);
+};
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,27 +30,27 @@ export default function Navbar() {
 				<Image className="dark:hidden"
 				  src={"/logo-light.png"}
 				  alt="Minerva Defense light mode logo"
-				  width={100}
-				  height={100}
+				  width={75}
+				  height={75}
 				  priority
 				/>
 				<Image className="hidden dark:block"
 				  src={"/logo-dark.png"}
 				  alt="Minerva Defense dark mode logo"
-				  width={100}
-				  height={100}
+				  width={75}
+				  height={75}
 				  priority
 				/>
 			</Link>
         </div>
 
         <div className="links">
-          <Link href="/"><p className="text-gray-900 dark:text-gray-100">Home</p></Link>
-          <Link href="/capabilities"><p className="text-gray-900 dark:text-gray-100">Capabilities</p></Link>
-          <Link href="/culture"><p className="text-gray-900 dark:text-gray-100">Culture</p></Link>
-          <Link href="/employees"><p className="text-gray-900 dark:text-gray-100">Employees</p></Link>
-          <Link href="/careers"><p className="text-gray-900 dark:text-gray-100">Careers</p></Link>
-          <Link href="/contact"><p className="text-gray-900 dark:text-gray-100">Contact Us</p></Link>
+			<Tab href="/" label="Home"></Tab>
+			<Tab href="/capabilities" label="Capabilities"></Tab>
+			<Tab href="/culture" label="Culture"></Tab>
+			<Tab href="/employees" label="Employees"></Tab>
+			<Tab href="/careers" label="Careers"></Tab>
+			<Tab href="/contact" label="Contact Us"></Tab>
         </div>
 
         <button className="menu-btn" onClick={() => setOpen(!open)}>

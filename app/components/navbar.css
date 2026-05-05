@@ -1,5 +1,5 @@
 .nav {
-  font-size: 20px;
+  font-size: 15px;
   opacity: 0.75;
 }
 
@@ -62,4 +62,8 @@
   .menu-btn {
     display: block;
   }
+}
+
+.accent-line {
+	border-bottom: 3px solid #ff7e28;
 }
