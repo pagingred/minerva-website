@@ -35,15 +35,15 @@ export default function Navbar() {
 				<Image className="dark:hidden"
 				  src={"/logo-light.png"}
 				  alt="Minerva Defense light mode logo"
-				  width={75}
-				  height={75}
+				  width={100}
+				  height={100}
 				  priority
 				/>
 				<Image className="hidden dark:block"
 				  src={"/logo-dark.png"}
 				  alt="Minerva Defense dark mode logo"
-				  width={75}
-				  height={75}
+				  width={100}
+				  height={100}
 				  priority
 				/>
 			</Link>

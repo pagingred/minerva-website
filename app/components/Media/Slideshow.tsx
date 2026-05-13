@@ -1,19 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { main_slideshow } from "../../data/main_slideshow";
 import Image from "next/image";
 import "./Slideshow.css";
-
-const slides = [
-  {
-    src: "/slide1.jpg",
-    caption: "Creating emergent defense technology",
-  },
-  {
-    src: "/slide2.png",
-    caption: "Using state of the art software",
-  }
-];
 
 type SlideShowProps = {
 	interactable: boolean;
@@ -29,12 +19,12 @@ export default function Slideshow({
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % slides.length);
+    setIndex((prev) => (prev + 1) % main_slideshow.length);
   };
 
   const prevSlide = () => {
     setIndex((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
+      prev === 0 ? main_slideshow.length - 1 : prev - 1
     );
   };
 
@@ -47,7 +37,7 @@ export default function Slideshow({
 
 	return (
 		<div className="slideshow">
-			{slides.map((slide, i) => (
+			{main_slideshow.map((slide, i) => (
 				<div key={i} className={`slide ${i === index ? "active" : ""}`}>
 					<Image src={slide.src} alt="" fill priority={i === 0} />
 
@@ -79,7 +69,7 @@ export default function Slideshow({
 			}
 			{interactable && 
 				<div className="dots">
-					{slides.map((_, i) => (
+					{main_slideshow.map((_, i) => (
 						<span
 							key={i}
 							className={i === index ? "dot active" : "dot"}
