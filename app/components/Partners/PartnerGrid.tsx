@@ -1,6 +1,6 @@
 // components/CapabilitiesGrid.tsx
 import PartnerCard from "./PartnerCard";
-import { partners } from "../data/partners";
+import { partners } from "../../data/partners";
 
 export default function PartnerGrid() {
   return (

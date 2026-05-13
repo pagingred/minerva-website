@@ -1,5 +1,5 @@
-import CapabilityGrid from "../components/CapabilityGrid";
-import PartnerGrid from "../components/PartnerGrid";
+import CapabilityGrid from "../components/Capabilities/CapabilityGrid";
+import PartnerGrid from "../components/Partners/PartnerGrid";
 
 export default function CapabilitiesPage() {
   return (
@@ -18,8 +18,7 @@ export default function CapabilitiesPage() {
         </h1>
 
         <p className="text-zinc-400 mb-10 leading-relaxed">
-          Minerva Defense develops advanced systems and research-driven solutions
-          across defense, intelligence, and emerging technologies.
+          Minerva Defense develops advanced systems for defense and intelligence applications. Our staff of experts work every day to provide R&D-driven solutions and emerging technologies to the warfighter. Success requires understanding the unique complexity of defense procurement, balancing mission needs with fiscal responsibility, and navigating extensive regulatory requirements.
         </p>
 		
 		<CapabilityGrid/>

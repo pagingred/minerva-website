@@ -1,9 +1,9 @@
-import Slideshow_NoInteract from "./components/Slideshow_NoInteract";
+import Slideshow from "./components/Media/Slideshow";
 
 export default function Home() {
 	return (
 		<main>
-			<Slideshow_NoInteract />
+			<Slideshow interactable={false} heroTextVisible={true} />
 		</main>
 	);
 }

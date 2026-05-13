@@ -4,7 +4,7 @@ import { useState } from "react";
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import Image from "next/image";
-import DarkModeToggle from "./DarkModeToggle";
+import DarkModeToggle from "../Theme/DarkModeToggle";
 import "./navbar.css";
 
 type TabButtonProps = {
