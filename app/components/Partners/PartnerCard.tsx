@@ -14,7 +14,7 @@ export default function PartnerCard({
   url,
 }: PartnerCardProps) {
   return (
-    <div className="group relative overflow-hidden bg-zinc-900/80 dark:bg-zinc-900 dark:border border-zinc-800 hover:border-zinc-700 transition">
+    <div className="group relative overflow-hidden bg-zinc-200 dark:bg-zinc-900 dark:border border-zinc-800 hover:border-zinc-700 transition">
       <Link href={url}>
 		  <div className="aspect-[4/3] relative">
 			<Image
@@ -28,7 +28,7 @@ export default function PartnerCard({
 		  </div>
 
 		  <div className="p-4">
-			<h3 className="text-lg text-white font-medium">
+			<h3 className="text-lg text-black dark:text-white font-medium">
 			{title}
 			</h3>
 		  </div>

@@ -25,7 +25,7 @@ export default function CapabilityCard({
     : description.slice(0, 5);
 
   return (
-    <div className="group relative overflow-hidden border border-zinc-800 bg-zinc-900 hover:border-zinc-700 transition">
+    <div className="group relative overflow-hidden border dark:border-zinc-800 bg-zinc-200 dark:bg-zinc-900 dark:hover:border-zinc-700 transition">
       <div
 		  className={`flex flex-col md:flex-row ${
 			index % 2 !== 0 ? "md:flex-row-reverse" : ""
@@ -49,7 +49,7 @@ export default function CapabilityCard({
             {category}
           </p>*/}
 
-          <h3 className="text-2xl font-semibold text-white mb-4">
+          <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">
             {title}
           </h3>
 
@@ -60,7 +60,7 @@ export default function CapabilityCard({
                 className="text-sm text-zinc-300 flex items-start gap-2"
               >
                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#ff7e28] shrink-0" />
-                <span>{item}</span>
+                <span className="text-black dark:text-white">{item}</span>
               </li>
             ))}
           </ul>
